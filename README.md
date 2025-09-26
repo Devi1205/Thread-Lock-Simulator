@@ -16,42 +16,6 @@ This project is a Streamlit-based visual simulator designed to demonstrate how m
 
 
 
-## 🗃️ Project Structure
-
-kernel_lock_simulator/
-│
-├── app.py                            # 🚀 Main Streamlit entry point
-├── requirements.txt                  # 📦 All required libraries
-├── README.md                         # 📖 Project overview & setup
-│
-├── backend/                          # 🧠 Core logic and concurrency simulation
-│   ├── thread_simulator.py           # Simulates threads, events, locks
-│   ├── lock_graph.py                 # Builds lock graph, detects deadlocks
-│   ├── deadlock_predictor.py         # Runtime prediction logic (Cai et al.)
-│   ├── static_analyzer.py            # Static lock graph cycle detection (Zhang et al.)
-│   ├── race_checker.py               # Shared access/race check logic (Wang et al.)
-│   └── models.py                     # Classes: Thread, Lock, Event, Resource
-│
-├── ui/                               # 🖥️ Streamlit user interface
-│   ├── simulator_page.py             # Main simulation interface
-│   ├── lock_graph_page.py            # Visual lock graph + cycle highlight
-│   ├── timeline_page.py              # Timeline of thread execution
-│   ├── results_page.py               # Detection summary & logs
-│   └── utils.py                      # Common UI components (buttons, themes)
-│
-├── assets/                           # 🗃️ Static files and samples
-│   ├── examples/                     # Preloaded thread-lock scenarios (JSON)
-│   ├── icons/                        # UI icons/logos (optional)
-│   └── styles.css                    # Optional custom Streamlit theming
-│
-├── data/                             # 📊 Saved simulation logs & graphs
-│   ├── graphs/                       # Lock graph images (optional cache)
-│   └── execution_logs/               # Logs of timeline steps
-│
-└── docs/                             # 📚 Project documentation
-    ├── report.pdf                    # Final report
-    ├── ieee_papers_summary.md        # Literature survey summaries
-    └── screenshots/                  # Output visuals (UI, graphs, timeline)
 
 
 # License
@@ -74,4 +38,5 @@ source venv/bin/activate
 
 # Step 4: Install requirements
 pip install -r requirements.txt
+
 
