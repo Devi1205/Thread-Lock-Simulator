@@ -10,6 +10,12 @@ This project is a Streamlit-based visual simulator designed to demonstrate how m
 - Analyze static and dynamic lock usage
 - Educational and interactive web interface
 
+
+
+
+
+
+
 ## 🗃️ Project Structure
 
 kernel_lock_simulator/
@@ -68,3 +74,4 @@ source venv/bin/activate
 
 # Step 4: Install requirements
 pip install -r requirements.txt
+
